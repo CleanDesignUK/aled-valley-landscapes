@@ -1,109 +1,61 @@
-/* Global Styles */
+/* --------------------------------------------------
+   styles.css - GLOBAL STYLES (American English)
+   Defines color variables, fonts, hero, footer, etc.
+-------------------------------------------------- */
+
+/* Color & Font Variables */
+:root {
+  /* Colors */
+  --color-bg: #f7f4f1;
+  --color-accent1: #e19c89;
+  --color-accent2: #b25238;
+  --color-text: #3c3c3c;
+  --color-muted: #676767;
+
+  /* Font Families */
+  --font-heading: 'Lato', sans-serif;        /* weight 400 for headings */
+  --font-subtitle: 'Source Sans 3', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+
+/* Base Reset & Typography */
+html,
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-a {
-  color: #0d6efd;
-  text-decoration: none;
+/* Headings: lighter weight to avoid overly thick text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 400; /* Lighter heading weight */
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
-/* Navbar */
-.navbar-brand {
-  font-weight: 700;
+/* Navbar Accent Background */
+.bg-accent2 {
+  background-color: var(--color-accent2) !important;
 }
 
-.navbar-nav .nav-link.active {
-  font-weight: bold;
-}
-
-/* Drop-down adjustments */
-.dropdown-menu {
-  min-width: 10rem;
-}
-
-/* Hero Section */
-.hero-section {
-  position: relative;
-  background: url('assets/images/hero-placeholder.jpg') no-repeat center center/cover;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
+/* Footer Basic */
+footer {
+  background-color: #3c3c3c;
   color: #fff;
-  padding: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero-content p.lead {
-  font-size: 1.5rem;
-}
-
-/* Section Titles */
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #0d6efd;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Intro Section */
-.intro-section p {
-  margin-bottom: 1rem;
-}
-
-/* Featured Services Cards */
-.featured-services .card {
-  border: none;
-  transition: transform 0.3s ease;
-}
-
-.featured-services .card:hover {
-  transform: translateY(-5px);
-}
-
-.card-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-/* Services Section Lists */
-.services-section ul {
-  list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-.footer-section {
-  font-size: 0.9rem;
 }

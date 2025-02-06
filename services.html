@@ -1,102 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aled Valley Landscapes – Comprehensive hard landscaping services, including natural disaster resilience.">
-  <meta name="keywords" content="Hard Landscaping, Patios, Stable Conversions, Natural Disasters, Wind, Flood, UK Landscapes">
-  <meta name="author" content="Aled Valley Landscapes">
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="Aled Valley Landscapes – Detailed overview of our hard landscaping, damage repairs, stable conversions, and structural services."
+  />
+  <meta
+    name="keywords"
+    content="Hard Landscaping, Damage Repairs, Stable Conversions, Structural Replacements, Patios, Driveways, Retaining Walls"
+  />
+  <meta name="author" content="Aled Valley Landscapes" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
   <title>Aled Valley Landscapes – Our Services</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <!-- Custom CSS (shared styles.css) -->
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- GOOGLE FONTS (Using your specified fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Source+Sans+3:wght@400;600;700&family=Work+Sans:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- BOOTSTRAP CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- BOOTSTRAP ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+
+  <!-- GLOBAL STYLES -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SERVICES PAGE STYLES -->
+  <link rel="stylesheet" href="services.css" />
 </head>
 <body id="services">
-  <!-- Navigation with Drop-down -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="index.html#home">Aled Valley Landscapes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <a class="navbar-brand fw-bold" href="index.html#home"
+        >Aled Valley Landscapes</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse text-center"
+        id="navbarNav"
+      >
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#intro">Intro</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About Us</a>
+          </li>
+          <!-- Services dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#services"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#hard-landscaping">Hard Landscaping</a></li>
-              <li><a class="dropdown-item" href="#natural-disasters">Natural Disasters</a></li>
+              <li>
+                <a class="dropdown-item" href="#hard-landscaping"
+                  >Hard Landscaping</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#damage-repairs"
+                  >Damage Repairs</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#stable-conversions"
+                  >Stable Conversions</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#structural-replacements"
+                  >Structural Replacements</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section with Overlay -->
-  <header class="hero-section">
+  <!-- HERO SECTION -->
+  <header class="hero-section d-flex align-items-center">
     <div class="hero-overlay"></div>
-    <div class="container hero-content text-center">
-      <h1>Our Hard Landscaping Services</h1>
-      <p class="lead">Bespoke solutions to transform your outdoor space and ensure resilience against natural challenges.</p>
+    <div class="container text-center text-white hero-content">
+      <h1 class="display-5 fw-bold">
+        Explore Our Full Range of Services
+      </h1>
+      <p class="lead mt-2">
+        We provide comprehensive solutions for hard landscaping, damage repairs,
+        stable conversions, and more.
+      </p>
     </div>
   </header>
 
-  <!-- Hard Landscaping Services Section -->
-  <section id="hard-landscaping" class="services-section py-5">
+  <!-- TOP 3-SERVICE CARDS -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title">Comprehensive Hard Landscaping</h2>
-      <p>
-        We specialise in designing and installing hard landscaping features that elevate your outdoor living. Our services include bespoke patios, garden walls, driveways, and elegant fencing solutions. Each element is crafted to complement your property and withstand the test of time.
-      </p>
-      <ul>
-        <li><strong>Patios & Decking:</strong> Durable surfaces designed for comfort and style.</li>
-        <li><strong>Garden & Retaining Walls:</strong> Engineered to prevent soil erosion and define outdoor zones.</li>
-        <li><strong>Driveways & Pathways:</strong> Attractive access routes using block paving and natural stone setts.</li>
-        <li><strong>Fencing & Boundaries:</strong> Solutions that offer privacy, security and a refined aesthetic.</li>
-        <li><strong>Water Features:</strong> Bespoke ponds and fountains that add a tranquil focal point.</li>
-      </ul>
+      <h2 class="section-title text-center mb-5">
+        Main Service Categories
+      </h2>
+      <div class="row g-4">
+        <!-- Card 1: Hard Landscaping -->
+        <div class="col-md-4">
+          <div class="card h-100" id="hard-landscaping">
+            <img
+              src="assets/images/placeholder-hard.jpg"
+              class="card-img-top"
+              alt="Hard Landscaping"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hard Landscaping</h5>
+              <p class="card-text">
+                Patios, driveways, retaining walls, fences—everything built to
+                endure and designed to impress.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Damage Repairs -->
+        <div class="col-md-4">
+          <div class="card h-100" id="damage-repairs">
+            <img
+              src="assets/images/placeholder-damage.jpg"
+              class="card-img-top"
+              alt="Damage Repairs"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Damage Repairs</h5>
+              <p class="card-text">
+                Wind, flood, or floor damage? We offer prompt, reliable fixes to
+                keep your landscape safe and beautiful.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: Stable Conversions -->
+        <div class="col-md-4">
+          <div class="card h-100" id="stable-conversions">
+            <img
+              src="assets/images/placeholder-stable.jpg"
+              class="card-img-top"
+              alt="Stable Conversions"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Stable Conversions</h5>
+              <p class="card-text">
+                Reinvent your outbuildings or stables into functional spaces,
+                preserving charm while adding modern utility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Natural Disasters Section -->
-  <section id="natural-disasters" class="services-section py-5 bg-light">
+  <!-- ALTERNATING SECTIONS (TEXT & IMAGE) x 3 -->
+  <section class="py-5">
     <div class="container">
-      <h2 class="section-title">Resilience Against Natural Disasters</h2>
-      <p>
-        In today’s climate, our landscapes must not only be beautiful but also resilient. We offer specialised hard landscaping solutions designed to mitigate the impacts of natural disasters, including severe wind and flood conditions.
-      </p>
-      <h3>Wind Resilience</h3>
-      <p>
-        Our wind-resistant designs incorporate robust materials and engineering techniques to secure structures against high winds. Using reinforced retaining walls, wind-deflective barriers, and proper anchorage systems, we ensure that patios, decking and other features remain stable and secure even during stormy weather.
-      </p>
-      <h3>Flood Protection</h3>
-      <p>
-        Flooding can cause significant damage to outdoor spaces. Our solutions include advanced drainage systems, elevated hardscape features, and permeable paving options that allow water to disperse quickly, reducing the risk of structural damage. These designs help protect your property while enhancing its aesthetic appeal.
-      </p>
-      <img src="assets/images/placeholder-disaster.jpg" alt="Natural Disasters Placeholder" class="img-fluid my-4">
+      <!-- 1. Structural Replacements -->
+      <div id="structural-replacements" class="row align-items-center g-4 mb-5">
+        <div class="col-md-6">
+          <img
+            src="assets/images/placeholder-structural.jpg"
+            alt="Structural Replacements"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3" style="font-family: 'Source Sans 3', sans-serif;">
+            Structural Replacements
+          </h3>
+          <p>
+            Old doors, frames, or walls causing issues? Our structural
+            replacement service modernizes key access points while ensuring
+            integrity and aesthetic appeal. We tailor solutions to fit your
+            property’s style and safety requirements.
+          </p>
+          <p>
+            From single-door replacements to larger load-bearing elements, we
+            meticulously plan, remove, and rebuild so your property remains
+            secure and visually cohesive.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. Patios & Driveways -->
+      <div class="row align-items-center g-4 mb-5">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="assets/images/placeholder-patio.jpg"
+            alt="Patios & Driveways"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="mb-3" style="font-family: 'Source Sans 3', sans-serif;">
+            Patios & Driveways
+          </h3>
+          <p>
+            Our hallmark is creating stunning patios and driveways that blend
+            form and function. Whether you prefer classic block paving or a more
+            contemporary natural stone, our team sources premium materials to
+            ensure lasting beauty.
+          </p>
+          <p>
+            With careful excavation, proper sub-base installation, and accurate
+            finishing, we guarantee surfaces that withstand daily wear and our
+            unpredictable weather.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. Flood Protection & Drainage -->
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img
+            src="assets/images/placeholder-flood.jpg"
+            alt="Flood Protection & Drainage"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3" style="font-family: 'Source Sans 3', sans-serif;">
+            Flood Protection & Drainage
+          </h3>
+          <p>
+            Heavy rains can be devastating if your outdoor space isn’t prepared.
+            We implement strategic drainage solutions—such as French drains,
+            permeable paving, and elevated features—to minimize flooding and
+            waterlogging.
+          </p>
+          <p>
+            By combining structural know-how with modern technology, we help
+            protect your property from the worst effects of storms, all while
+            keeping your garden looking tidy and coherent.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer-section bg-dark text-white py-4 text-center">
+  <!-- SECOND SET OF 3-SERVICE CARDS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        More Services
+      </h2>
+      <div class="row g-4">
+        <!-- Card 1: Retaining Walls & Fencing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/placeholder-walls.jpg"
+              class="card-img-top"
+              alt="Retaining Walls & Fencing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Retaining Walls & Fencing</h5>
+              <p class="card-text">
+                Boost stability, privacy, and style with custom retaining walls
+                and fences designed to endure harsh conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Outdoor Flooring & Repairs -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/placeholder-floor.jpg"
+              class="card-img-top"
+              alt="Outdoor Flooring & Repairs"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outdoor Flooring & Repairs</h5>
+              <p class="card-text">
+                We handle everything from new paving installations to floor
+                repairs, ensuring your outdoor surfaces remain safe and level.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: Bespoke Outdoor Features -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/placeholder-bespoke.jpg"
+              class="card-img-top"
+              alt="Bespoke Outdoor Features"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bespoke Outdoor Features</h5>
+              <p class="card-text">
+                Need an outdoor kitchen, custom seating, or a unique
+                water feature? We can design and build to your exact vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-3 text-center">
     <div class="container">
       <p class="mb-0">&copy; 2025 Aled Valley Landscapes. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- BOOTSTRAP JS BUNDLE -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
