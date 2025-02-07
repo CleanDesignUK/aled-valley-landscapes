@@ -7,7 +7,7 @@
 .hero-section {
   position: relative;
   min-height: 70vh;
-  background: url("assets/images/hero-home.jpg") center/cover no-repeat;
+  background: url("hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .hero-section .hero-content {
   position: relative;
